@@ -1,15 +1,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
     color: white;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.1fr 0.1fr 5fr;
     justify-items: center;
-    background: #12c2e9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #12c2e9, #7C52E1,); 
-    background: linear-gradient(to right, #12c2e9, #7C52E1);
+    /* background: #12c2e9; fallback for old browsers */
+    /* sbackground: -webkit-linear-gradient(to right, #12c2e9, #7C52E1,);  */
+    background:linear-gradient(to left, #12c2e9, #7C52E1);
     background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 .icon{
@@ -46,16 +46,17 @@ body {
 
 .cards{
     display: grid;
-    width: 100vw;
+    width: 95vw;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: repeat(auto-fit, 300px);
     gap: 40px;
-    margin:40px;
+    margin:20px;
     grid-area: 3/1/4/4;
+    justify-content: center;
 }
 
 .card{
-    width: 300px;
+    width: 280px;
     background: rgba(253, 253, 253, 0.3) center no-repeat;
     background-size: cover;
     height: 300px;
@@ -114,4 +115,11 @@ footer{
     align-items: center;
     border-radius: 10px;
     color: white;
+}
+
+@media (max-width: 600px ){
+    body{
+        background:red
+    }
+
 }
