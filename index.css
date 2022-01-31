@@ -19,7 +19,7 @@ body {
 .title{
     color: #f9a03f;
     grid-area: 1/1/2/4;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .inputContainer {
@@ -30,7 +30,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #f9a03f;
     border-radius: 10px;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     margin: 0px 10px;
 
@@ -115,11 +115,4 @@ footer{
     align-items: center;
     border-radius: 10px;
     color: white;
-}
-
-@media (max-width: 600px ){
-    body{
-        background:red
-    }
-
 }
